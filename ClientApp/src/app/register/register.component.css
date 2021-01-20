@@ -1,0 +1,106 @@
+
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .responsive {
+    width: 25%;
+    height: auto;
+  }
+  
+  .bg-img {
+    /* The image used
+    background-image: url("https://i.ibb.co/zQccMwK/Background.jpg");
+  */
+    display: inline-flexbox;
+    min-height: 100%;
+  
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .gfg {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+  
+  }
+  
+  img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+  
+  
+  /* Add styles to the form container */
+  .container {
+    margin: 5px auto;
+    max-width: 40%;
+    padding: 16px;
+  }
+  
+  /* Full-width input fields */
+  input[type=text],
+  input[type=email],
+    /* input[type=date], */
+  input[type=password] {
+    width: 100%;
+    /* padding: 15px; */
+    margin: 5px 0 22px 0;
+    border: none;
+    border: 1px solid black;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #4fa5f5;
+    color: white;
+    padding: 16px 40px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .divider {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+  }
+  
+  #forgot_password {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  

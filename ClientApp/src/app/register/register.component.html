@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  </style>
+</head>
+
+<body>
+
+<div class="bg-img">
+  
+  <form class="container" required>
+    <h1 style="text-align: center;">Register your account</h1>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <b><label for="inputNume">Username</label></b>
+        <input [(ngModel)]="nume" name="nume" type="text" class="form-control" id="inputNume" required>
+      </div>
+      
+    </div>
+ 
+    <div class="form-row">
+
+        <div class="form-group col-md-12">
+            <b><label for="inputPrenume">Password</label></b>
+            <input [(ngModel)]="prenume" name="prenume" type="password" class="form-control" id="inputPrenume" required>
+          </div>
+
+    </div>
+
+    <!--
+    <div class="form-group">
+
+
+      <div class="form-check">
+
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+
+      </div>
+
+
+    </div>
+     -->
+
+    <div class="divider"></div>
+
+    <div class="butoane">
+      <button routerLink="{{catreLogin}}" (click)="signUp()" type="submit" class="btn btn-primary">Register</button>
+
+      <div class="divider"></div>
+
+      <button routerLink="/login" type="submit" class="btn btn-primary">Go to Login</button>
+
+    </div>
+
+  </form>
+
+
+</div>
+
+</body>
+
+</html>
+
+

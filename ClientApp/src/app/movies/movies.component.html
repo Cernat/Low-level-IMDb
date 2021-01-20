@@ -1,0 +1,23 @@
+<p>movies works!</p>
+<p> {{dateNow | date}}</p>
+
+<h6>Today's Date Short: {{todaysDate | date:'short'}}</h6>
+<table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Height</td>
+        <td>Weight</td>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of people | formatpipe:'age':'asc'">
+        <!--<tr *ngFor="let person of people">   -->
+          <td>{{person.name}}</td>
+          <td>{{person.age}}</td>
+          <td>{{person.height}} cm</td>
+          <td>{{person.weight}} kg</td>
+         </tr>
+      </tbody>
+  </table>
